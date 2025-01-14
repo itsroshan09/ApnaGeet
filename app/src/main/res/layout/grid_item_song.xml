@@ -1,0 +1,30 @@
+<!-- grid_item_song.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background_box">
+
+    <ImageView
+        android:id="@+id/imageViewBanner"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/textViewMusicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewBanner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Music Name"
+        android:textColor="#3F51B5"
+
+        android:textSize="14sp" />
+
+</RelativeLayout>

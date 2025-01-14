@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".LaunchFragment2"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/background_box">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Set Your Profile"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#0779B6"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Profile Photo"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0779B6"
+        android:layout_marginTop="80dp"
+        />
+
+    <Button
+        android:id="@+id/selectphotobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="Select"
+        android:textStyle="bold"
+        android:layout_marginTop="110dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Name"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0779B6"
+        android:layout_marginTop="170dp"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="10"
+        android:textSize="14sp"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_marginTop="200dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Mobile Number"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0779B6"
+        android:layout_marginTop="250dp"
+        />
+
+    <EditText
+        android:id="@+id/usermobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="10"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:inputType="phone"
+        android:textColor="#0779B6"
+        android:layout_marginTop="270dp"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:ems="10"
+        android:text="Submit"
+        android:backgroundTint="#F00BADF6"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#0779B6"
+        android:layout_marginTop="330dp"
+        />
+
+
+
+</FrameLayout>

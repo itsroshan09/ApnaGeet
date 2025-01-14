@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "517373502843",
+    "project_id": "apna-geet-f308e",
+    "storage_bucket": "apna-geet-f308e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517373502843:android:77a5ce43a1dd8cd71d89de",
+        "android_client_info": {
+          "package_name": "com.roshtune"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb4KmvepnFHJyCwrZuN351fJDmLXP_UrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

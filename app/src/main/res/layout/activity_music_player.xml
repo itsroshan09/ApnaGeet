@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicPlayer"
+    android:layout_margin="3dp"
+    android:background="@drawable/musicbg2">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        android:onClick="goback"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_show_sleep_timer"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Sleep Timer"
+        android:textColor="#222495"
+        android:textStyle="italic"
+        android:textSize="18sp"/>
+
+
+    <ImageButton
+        android:id="@+id/btn_show_sleep_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Sleep Timer"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/baseline_av_timer_24"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        android:onClick="showTimerDialog"/>
+
+    <TextView
+        android:id="@+id/songname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#222495"
+        android:text="Song Name"
+        />
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:text="Artist"
+        android:textColor="#222495"
+        android:textStyle="italic"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/songname"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:id="@+id/songimage"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_margin="30dp"
+        android:adjustViewBounds="true"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songimage"
+        android:id="@+id/sb"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/currenttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb"
+        android:layout_margin="20dp"
+        android:text="00:00"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"/>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sb"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="00:00"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/back10btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backward10"
+            android:text="B10"
+            android:src="@drawable/backward"
+            android:background="@null"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="previous10"
+            android:text="B10"
+            android:src="@drawable/backward10"
+            android:background="@null"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/playbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playsong"
+            android:text="Play"
+            android:src="@drawable/playbtn"
+            android:background="@null"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="next10"
+            android:text="Play"
+            android:src="@drawable/forward10"
+            android:background="@null"
+            android:layout_weight="1"
+            />
+
+
+
+
+        <ImageButton
+            android:id="@+id/forward10btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="forward10"
+            android:text="10 F"
+            android:src="@drawable/forward"
+            android:layout_weight="1"
+            android:background="@null"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
