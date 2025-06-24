@@ -95,7 +95,9 @@ Visualizer animations
 Offline lyrics integration
 
 👨‍💻 Author
+
 Roshan Patil
+
 LinkedIn | GitHub
 
 📜 License
